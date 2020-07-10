@@ -3,16 +3,13 @@ import ProductsList from './ProductsList'
 import ShoppingCart from './ShoppingCart'
 
 
-function Body(){
+function ShoppingBody(){
     return(
-        <div className="body-container">
+        <div className="shopping-body">
             <ProductsList />
-            <div>
-                This is the body of my website
-            </div>
             <ShoppingCart />
         </div>
     )
 }
 
-export default Body
+export default ShoppingBody
