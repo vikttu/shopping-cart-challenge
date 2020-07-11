@@ -1,30 +1,21 @@
 import React from 'react'
-import ProductItem from './ProductItem'
 
+import ProductItem from './ProductItem'
+import productsArray from './products-array'
+
+console.log(productsArray)
 
 function ProductsList(){
 
-    /*const productPlaceholder = {
-        id: 1,
-        name: 'Product',
-        price: '123.00',
-        quantity: 2,}
-    }
-    */
-
+    const productsComponents = productsArray.map(product => <ProductItem 
+        key={product.id} 
+        name={product.name} 
+        price={product.price} 
+        quantity={product.quantity} />)
+    console.log(productsComponents)
     return(
         <div className="products-list">
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
+            {productsComponents}
         </div>
     )
 }
