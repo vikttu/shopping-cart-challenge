@@ -5,10 +5,10 @@ const userName = "John Doe"
 function Header(){
     return(
         <header>
-                <h1>Shopping</h1>
+                <h1 className="shop-name">Shopping</h1>
                 <div className="user-icon">
                 <img src={profile} className="profile-picture" alt="Profile" />
-                <h3> {userName} </h3>
+                <h3 className="user-name"> {userName} </h3>
                 </div>
         </header>
     )
