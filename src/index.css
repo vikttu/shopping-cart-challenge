@@ -48,8 +48,7 @@ header{
 .shopping-body{
   display: flex;
   flex-direction: row;
-  align-content: flex-start;
-	justify-content: space-evenly;
+	justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -94,7 +93,13 @@ header{
   border-style: solid;
 }
 
-.shopping-cart {
+.cart-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-cart{
   margin: 10px;
   width: 300px;
 }
@@ -107,52 +112,66 @@ header{
   border-radius: 10px 10px 0px 0px;
 }
 
+.items-added{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 170px;
+  width: 300px;
+}
+
 .cart-item {
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
   border-style: solid;
+  border-color: #c2c8ce;
   border-width: 1px;
   border-radius: 5px;
   margin: 10px;
   height: 75px;
-  max-width: 300px;
+  width: 280px;
 }
 
 .cart-item-info{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: center;
+  justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0px;
 }
-
 .cart-item-buttons{
   display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
+  align-content: stretch;
   flex-wrap: wrap;
-  height: 64px;
+  background-color: #effdff;
+  height: 75px;
+  width: 32px;
+  border-left-style: solid;
+  border-color: #c2c8ce;
+  border-left-width: 1px;
+  border-radius: 0px 5px 5px 0px;
 }
 .add-icon, .del-icon{
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
+}
+.add-item{
+  border-radius: 0px 5px 0px 0px;
+}
+.del-item{
+  border-radius: 0px 0px 5px 0px;
 }
 .add-item, .del-item{
   display: flex;
   align-items: center;
-  height: 32px;
-  width: 32px;
   margin: 0px;
-  padding: 0px;
+  padding: 1px;
   background-color: #effdff;
-  border: #020288ff;
-  border-style: solid;
-  border-width: 1px;
+  border: none;
+
 }
 .add-item:hover{
   background-color: #86eeac;
@@ -202,9 +221,9 @@ footer{
     display: none;
   }
 }
-@media screen and (max-width: 352) {
+@media screen and (max-width: 919px) {
   .products-list{
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
   .shopping-body{
