@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 html, body {
   margin: 0;
   color: #020288ff;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: 'Quicksand', sans-serif;
 }
-
 header{
   display: flex;
   align-items: center;
@@ -18,11 +19,9 @@ header{
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 .shop-name{
   margin: 10px;
 }
-
 .user-icon{
   display: flex;
   align-items: center;
@@ -32,7 +31,6 @@ header{
   max-height: inherit;
   margin-right: 10px;
 }
-
 .profile-picture{
   width: 48px;
   height: 48px;
@@ -40,18 +38,16 @@ header{
   background-color: white;
   border-radius: 50%;
 }
-
 .profile-picture:hover{
+  cursor: pointer;
   background-color: #effdff;
 }
-
 .shopping-body{
   display: flex;
   flex-direction: row;
 	justify-content: center;
   flex-wrap: wrap;
 }
-
 .products-list{
   display: flex;
   flex-direction: row;
@@ -61,7 +57,6 @@ header{
   max-width: 600px;
 
 }
-
 .buy-item{
   background-color: #a4fcc4ff;
   border: none;
@@ -74,9 +69,9 @@ header{
   font-size: 16px;
 }
 .buy-item:hover, .discount-button:hover{
+  cursor: pointer;
   background-color: #86eeac;
 }
-
 .product-item{
   display: flex;
   flex-direction: column;
@@ -92,18 +87,15 @@ header{
   border-radius: 10px;
   border-style: solid;
 }
-
 .cart-container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .shopping-cart{
   margin: 10px;
   width: 300px;
 }
-
 .cart-header{
   background-color: #ffbdbc;
   text-align: center;
@@ -111,7 +103,6 @@ header{
   margin: 0px;
   border-radius: 10px 10px 0px 0px;
 }
-
 .items-added{
   display: flex;
   flex-direction: row;
@@ -120,7 +111,6 @@ header{
   height: 170px;
   width: 300px;
 }
-
 .cart-item {
   display: flex;
   justify-content: space-between;
@@ -134,7 +124,6 @@ header{
   height: 75px;
   width: 280px;
 }
-
 .cart-item-info{
   display: flex;
   justify-content: space-around;
@@ -171,22 +160,21 @@ header{
   padding: 1px;
   background-color: #effdff;
   border: none;
-
 }
 .add-item:hover{
+  cursor: pointer;
   background-color: #86eeac;
 }
 .del-item:hover{
+  cursor: pointer;
   background-color: #ee9f9e;
 }
-
 .discount-section{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 5px;
 }
-
 #voucher {
   max-width: 200px;
 }
@@ -202,14 +190,12 @@ header{
   display: inline-block;
   font-size: 16px; 
 }
-
 .total {
   padding: 20px;
   margin: 0;
   background-color: #ffbdbc;
   border-radius: 0px 0px 10px 10px;
 }
-
 footer{
   margin-top: 50px;
   margin-bottom: 0px;
@@ -230,7 +216,5 @@ footer{
     flex-direction: column;
     align-content: center;
   	justify-content: center;
-
   }
-  
 }
