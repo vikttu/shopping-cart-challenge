@@ -10,6 +10,7 @@ function ShoppingCart(){
                 <div className="items-added">
                     <CartItem />
                     <CartItem />
+                    <CartItem />
                 </div>
                 <form className="discount-section">
                     <input type="text" id="voucher" name="voucher" placeholder="Discount code"></input>
