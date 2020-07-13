@@ -3,7 +3,7 @@ import React from 'react'
 import ProductItem from './ProductItem'
 import productsArray from './products-array'
 
-console.log(productsArray)
+/*This component creates the products in a more dynamic way fetching external data*/
 
 function ProductsList(){
 
@@ -12,8 +12,8 @@ function ProductsList(){
         name={product.name} 
         price={product.price} 
         quantity={product.quantity} />)
-    console.log(productsComponents)
-    return(
+
+        return(
         <div className="products-list">
             {productsComponents}
         </div>
