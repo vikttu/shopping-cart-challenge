@@ -68,7 +68,7 @@ header{
   display: inline-block;
   font-size: 16px;
 }
-.buy-item:hover, .discount-button:hover{
+.buy-item:hover, .discount-button:hover, .checkout-button:hover{
   cursor: pointer;
   background-color: #86eeac;
 }
@@ -130,6 +130,7 @@ header{
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0px;
+  font-size: 13px;
 }
 .cart-item-buttons{
   display: flex;
@@ -195,6 +196,18 @@ header{
   margin: 0;
   background-color: #ffbdbc;
   border-radius: 0px 0px 10px 10px;
+}
+.checkout-button {
+  background-color: #a4fcc4ff;
+  border: none;
+  border-radius: 10px;
+  color: #020288ff;
+  padding: 20px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
 }
 footer{
   margin-top: 50px;

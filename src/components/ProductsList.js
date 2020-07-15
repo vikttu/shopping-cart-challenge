@@ -23,7 +23,7 @@ class ProductsList extends React.Component {
     render() {
         if (this.state.error){
             return(
-                <h1>Service not working. Try again later</h1>
+                <h1>Service not working. Try again later </h1>
             )
         }
         return(
@@ -32,6 +32,7 @@ class ProductsList extends React.Component {
                 this.state.products.map(products => 
                     <ProductItem 
                     key={products.id} 
+                    id={products.id}
                     name={products.name} 
                     price={products.price} 
                     available={products.available}  />) 
