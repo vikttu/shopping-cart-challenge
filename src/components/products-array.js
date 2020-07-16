@@ -1,3 +1,5 @@
+//temporary placeholder. needs to be deleted after
+
 const productsArray = [
     {
         id: 1,

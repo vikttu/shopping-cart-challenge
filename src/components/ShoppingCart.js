@@ -8,6 +8,7 @@ function ShoppingCart(){
             <div className="shopping-cart">
                 <h2 className="cart-header">Shopping Cart</h2>
                 <div className="items-added">
+                    
                     <CartItem />
                     <CartItem />
                     <CartItem />
