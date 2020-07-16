@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import shoppingBag from '../assets/shopping-bag.svg'
 
 
