@@ -13,7 +13,6 @@ function ShoppingBody(){
         .then(res => setProducts(res.data.products, products))
         .catch(err => console.log(err))
     }, [])
-    console.log(products)
 
     return(
         <div className="shopping-body">
