@@ -6,11 +6,11 @@ import ShoppingCart from './ShoppingCart'
 
 
 function ShoppingBody(){
-    const [products, setProducts] = useState(() => [])  
+    const [products, setProducts] = useState(() => [])
     
     useEffect( ()=> {
         axios.get(`https://shielded-wildwood-82973.herokuapp.com/products.json`)
-        .then(res => setProducts(res.data.products, products))
+        .then(res => setProducts(prevProducts => res.data.products))
         .catch(err => console.log(err))
     }, [])
 
